@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cine — Create & Share Reels</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Cine</h1>
+      <p>Create & Share short reels with your favorite music</p>
+      <a href="#about" class="btn">Learn More</a>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Cine</h2>
+      <p>Cine is a simple app to create short videos from your gallery and add music to share with friends. Your
+        content stays yours, and we respect your privacy.</p>
+      <div class="features">
+        <div class="feature-card">
+          <h3>Gallery Uploads</h3>
+          <p>Select images & videos from your device gallery to create reels.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Music Integration</h3>
+          <p>Add your favorite music to make your reels more fun.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Share Safely</h3>
+          <p>Your content is yours — we don't claim ownership or sell data.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Privacy Policy Section -->
+  <section id="privacy" class="section dark-section">
+    <div class="container">
+      <h2>Privacy Policy</h2>
+      <div class="accordion">
+        <button class="accordion-btn">1. Information We Collect</button>
+        <div class="panel">
+          <p>Cine collects only the content that users explicitly provide (images, videos, music from device gallery).
+            Minimal technical info (app version, device type) is collected for analytics.</p>
+        </div>
+
+        <button class="accordion-btn">2. How We Use Information</button>
+        <div class="panel">
+          <p>To allow users to create and share reels within Cine, improve app performance, and anonymously analyze
+            usage.
+          </p>
+        </div>
+
+        <button class="accordion-btn">3. Sharing & Copyright</button>
+        <div class="panel">
+          <p>All content uploaded or shared by users remains their responsibility. Users should ensure any music or
+            media
+            added is not copyrighted or they have permission. Violating content may be removed.</p>
+        </div>
+
+        <button class="accordion-btn">4. Deletion & Support</button>
+        <div class="panel">
+          <p>Request deletion or support via: <a href="mailto:support@cineapp.com">support@cineapp.com</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact & Support</h2>
+      <a href="mailto:cineapp089@gmail.com">cineapp089@gmail.com</a>
+      <!-- <p>Email: <a href="mailto:cineapp089@gmail.com">cineapp089@gmail.com</a></p> -->
+      <p>Reach out for any questions about privacy or app issues.</p>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Cine Built for MVP App & Indus App Store Submission</p>
+  </footer>
+
+  <script>
+    // Accordion functionality
+    const acc = document.querySelectorAll('.accordion-btn');
+    acc.forEach(btn => {
+      btn.addEventListener('click', () => {
+        btn.classList.toggle('active');
+        const panel = btn.nextElementSibling;
+        panel.style.maxHeight = panel.style.maxHeight ? null : panel.scrollHeight + "px";
+      });
+    });
+  </script>
+</body>
+
+</html>

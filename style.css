@@ -1,0 +1,131 @@
+/* Basic Reset & Font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #0f1724;
+    color: #e6eef6;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #06b6d4;
+}
+
+.section {
+    padding: 60px 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(135deg, #06b6d4, #8b5cf6);
+    padding: 120px 20px;
+    text-align: center;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #fff;
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 12px 0;
+    color: #f0f0f0;
+}
+
+.btn {
+    display: inline-block;
+    background: #fff;
+    color: #0f1724;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-top: 12px;
+}
+
+/* About / Features */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.feature-card {
+    background: #111827;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform .3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card h3 {
+    margin-bottom: 8px;
+    color: #06b6d4;
+}
+
+/* Privacy Policy Accordion */
+.dark-section {
+    background: #111827;
+}
+
+.accordion-btn {
+    background: #1f2937;
+    color: #e6eef6;
+    cursor: pointer;
+    padding: 14px 20px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    transition: 0.3s;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.accordion-btn.active {
+    background: #06b6d4;
+    color: #021019;
+}
+
+.panel {
+    padding: 0 20px;
+    background: #1f2937;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease;
+    border-radius: 0 0 8px 8px;
+}
+
+/* Contact */
+#contact a {
+    color: #06b6d4;
+    font-weight: 600;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #94a3b8;
+    background: #0b1120;
+}
